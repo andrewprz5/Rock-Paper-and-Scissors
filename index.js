@@ -72,20 +72,33 @@ function game() {
             }
         }
     } else {
-        alert("So you're a chicken then, huh?")
+        alert("So you're a chicken then, huh?");
+
     }
 };
 
 function playAgain() {
-    if (confirm("Do you wish to play again?")) {
-        game();
-    } else {
-        alert("Ok, see ya later!");
+    for (i = 0; i < Infinity; i++) {
+        if (confirm("Do you wish to play again?")) {
+            playerScore = 0;
+            computerScore = 0;
+            game();
+        } else {
+            alert("Ok, see ya later!");
+            break;
+        }
     }
 };
 
-game();
-playAgain();
+function playOrNot () {
+    if (game()) {
+        playAgain();
+    } else {
+        return null;
+    }
+};
+
+playOrNot();
 
 
 
