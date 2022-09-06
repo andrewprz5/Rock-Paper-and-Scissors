@@ -44,7 +44,7 @@ function playRound(playerSelection, computerSelection) {
         playerScore += 1;
         computerScore += 1;
     } else {
-        alert("That ain't an option dumbo.");
+        alert("That is not an option, buddy.");
         i -= 1;
     }
 };
@@ -72,7 +72,7 @@ function game() {
             }
         }
     } else {
-        alert("Youse a scaredy cat...")
+        alert("So you're a chicken then, huh?")
     }
 };
 
@@ -80,7 +80,7 @@ function playAgain() {
     if (confirm("Do you wish to play again?")) {
         game();
     } else {
-        alert("Ok, bye bye then!");
+        alert("Ok, see ya later!");
     }
 };
 
