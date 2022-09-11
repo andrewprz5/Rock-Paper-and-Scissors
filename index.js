@@ -73,7 +73,6 @@ function game() {
         }
     } else {
         alert("So you're a chicken then, huh?");
-
     }
 };
 
@@ -90,16 +89,6 @@ function playAgain() {
     }
 };
 
-function playOrNot () {
-    if (game()) {
-        playAgain();
-    } else {
-        return null;
-    }
-};
+game();
+playAgain();
 
-playOrNot();
-
-
-
-// shorten entire code if you can
